@@ -1,0 +1,28 @@
+body {
+    font-size: 2em;
+    background-color: #d3d3d3;
+}
+
+.titolo {
+    text-align: center;
+    font-size: 2em;
+}
+
+.interno {
+  border: 0.5em solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 1vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.internonum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.internonum, .internodata {
+    padding: 1vw;
+}

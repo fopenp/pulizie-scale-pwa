@@ -1,0 +1,42 @@
+{
+    "name": "Pulizie Scale (PWA Edition)",
+    "short_name": "PS (PWA)",
+    "description": "Mostra la turnazione delle scale.",
+    "scope": "/pulizie-scale-pwa/",
+    "start_url": "/pulizie-scale-pwa/",
+    "background_color": "#d3d3d3",
+    "theme_color": "#d3d3d3",
+    "icons": [
+        {
+            "src": "icone/icona-ps-pwa-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "icone/icona-ps-pwa-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "icone/icona-ps-pwa-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "icone/icona-ps-pwa-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "icone/icona-ps-pwa-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "icona-ps-pwa.svg",
+            "type": "image/svg",
+            "sizes": "any"
+        }
+    ],
+    "display": "standalone"
+}

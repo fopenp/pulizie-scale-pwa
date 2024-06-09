@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        let versione = "v0.0.1";
+    </script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icona-ps-pwa.svg">
+    <link rel="apple-touch-icon" href="icone/icona-ps-pwa-180.png">
+    <link rel="manifest" href="/pulizie-scale-pwa/manifest.json">
+</head>
+<body>
+    <div class="titolo">PULIZIE SCALE</div>
+    <div class="interno">
+        <div class="internonum">INTERNO 1</div>
+        <div class="internodate">
+            <div id="int1data1p1" class="internodata">Data</div>
+            <div id="int1data2p1" class="internodata">Data</div>
+            <div id="int1data3p1" class="internodata">Data</div>
+            <div id="int1data4p1" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 2</div>
+        <div class="internodate">
+            <div id="int2data1p1" class="internodata">Data</div>
+            <div id="int2data2p1" class="internodata">Data</div>
+            <div id="int2data3p1" class="internodata">Data</div>
+            <div id="int2data4p1" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 3</div>
+        <div class="internodate">
+            <div id="int3data1p1" class="internodata">Data</div>
+            <div id="int3data2p1" class="internodata">Data</div>
+            <div id="int3data3p1" class="internodata">Data</div>
+            <div id="int3data4p1" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 6</div>
+        <div class="internodate">
+            <div id="int6data1p1" class="internodata">Data</div>
+            <div id="int6data2p1" class="internodata">Data</div>
+            <div id="int6data3p1" class="internodata">Data</div>
+            <div id="int6data4p1" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 5</div>
+        <div class="internodate">
+            <div id="int5data1p1" class="internodata">Data</div>
+            <div id="int5data2p1" class="internodata">Data</div>
+            <div id="int5data3p1" class="internodata">Data</div>
+            <div id="int5data4p1" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 4</div>
+        <div class="internodate">
+            <div id="int4data1p1" class="internodata">Data</div>
+            <div id="int4data2p1" class="internodata">Data</div>
+            <div id="int4data3p1" class="internodata">Data</div>
+            <div id="int4data4p1" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 1</div>
+        <div class="internodate">
+            <div id="int1data1p2" class="internodata">Data</div>
+            <div id="int1data2p2" class="internodata">Data</div>
+            <div id="int1data3p2" class="internodata">Data</div>
+            <div id="int1data4p2" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 2</div>
+        <div class="internodate">
+            <div id="int2data1p2" class="internodata">Data</div>
+            <div id="int2data2p2" class="internodata">Data</div>
+            <div id="int2data3p2" class="internodata">Data</div>
+            <div id="int2data4p2" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 3</div>
+        <div class="internodate">
+            <div id="int3data1p2" class="internodata">Data</div>
+            <div id="int3data2p2" class="internodata">Data</div>
+            <div id="int3data3p2" class="internodata">Data</div>
+            <div id="int3data4p2" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 6</div>
+        <div class="internodate">
+            <div id="int6data1p2" class="internodata">Data</div>
+            <div id="int6data2p2" class="internodata">Data</div>
+            <div id="int6data3p2" class="internodata">Data</div>
+            <div id="int6data4p2" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 5</div>
+        <div class="internodate">
+            <div id="int5data1p2" class="internodata">Data</div>
+            <div id="int5data2p2" class="internodata">Data</div>
+            <div id="int5data3p2" class="internodata">Data</div>
+            <div id="int5data4p2" class="internodata">Data</div>
+        </div>
+    </div>
+    <div class="interno">
+        <div class="internonum">INTERNO 4</div>
+        <div class="internodate">
+            <div id="int4data1p2" class="internodata">Data</div>
+            <div id="int4data2p2" class="internodata">Data</div>
+            <div id="int4data3p2" class="internodata">Data</div>
+            <div id="int4data4p2" class="internodata">Data</div>
+        </div>
+    </div>
+    <script>
+        let oggi = new Date();
+        let datarif = new Date(2020, 11, 18);  // ven 18 dic 2020
+        function trovaGiornoVicino() {
+            let dataoggi = oggi;
+            let datai = datarif;
+            let dataj = new Date(datarif);
+            while (datai < dataoggi) {
+                dataj = new Date(datai);
+                datai.setDate(datai.getDate() + 42);
+                // console.log("datai: " + datai);
+            }
+            return dataj;
+        }
+
+        // Interno 1 (pagina 1)
+        let calcolo1 = trovaGiornoVicino();
+        console.info("trovaGiornoVicino(): " + calcolo1);
+        document.getElementById("int1data1p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int1data2p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int1data3p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int1data4p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 2 (pagina 1)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int2data1p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int2data2p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int2data3p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int2data4p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 3 (pagina 1)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int3data1p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int3data2p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int3data3p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int3data4p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 6 (pagina 1)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int6data1p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int6data2p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int6data3p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int6data4p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 5 (pagina 1)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int5data1p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int5data2p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int5data3p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int5data4p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 4 (pagina 1)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int4data1p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int4data2p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int4data3p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int4data4p1").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 1 (pagina 2)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int1data1p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int1data2p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int1data3p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int1data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 2 (pagina 2)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int2data1p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int2data2p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int2data3p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int2data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 3 (pagina 2)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int3data1p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int3data2p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int3data3p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int3data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 6 (pagina 2)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int6data1p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int6data2p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int6data3p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int6data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 5 (pagina 2)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int5data1p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int5data2p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int5data3p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int5data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        // Interno 4 (pagina 2)
+        calcolo1.setDate(calcolo1.getDate() + 4);
+        document.getElementById("int4data1p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int4data2p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int4data3p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+        calcolo1.setDate(calcolo1.getDate() + 1);
+        document.getElementById("int4data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+    </script>
+</body>
+</html>
