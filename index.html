@@ -292,6 +292,16 @@
 
         calcolo1.setDate(calcolo1.getDate() + 1);
         document.getElementById("int4data4p2").innerHTML = new Intl.DateTimeFormat("it-IT", { dateStyle: "full" }).format(calcolo1);
+
+
+        if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("/pulizie-scale-pwa/sw.js", { scope: "/pulizie-scale-pwa/" });
+                console.log("serviceWorker registrato.");
+            }
+            else {
+                console.log("serviceWorker non disponibile.");
+            }
+
     </script>
 </body>
 </html>

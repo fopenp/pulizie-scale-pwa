@@ -5,7 +5,7 @@ const NOME_CACHE=`pulizie-scale-pwa-${VERSIONE}`;
 const URLS = [
     `${PERCORSO}/`,
     `${PERCORSO}/index.html`,
-    `${PERCORSO}/index.js`,
+    /* `${PERCORSO}/index.js`, */
     `${PERCORSO}/index.css`,
     `${PERCORSO}/icona-ps-pwa.svg`,
     `${PERCORSO}/icone/icona-ps-pwa-512.png`,
