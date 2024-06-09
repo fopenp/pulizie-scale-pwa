@@ -1,5 +1,5 @@
 const PERCORSO="/pulizie-scale-pwa";
-const VERSIONE="v1";
+const VERSIONE="v2";
 const NOME_CACHE=`pulizie-scale-pwa-${VERSIONE}`;
 
 const URLS = [
